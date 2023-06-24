@@ -112,7 +112,7 @@ function Comment(props: { comment: Comment }) {
   };
 
   return (
-    <div className="m-2 p-2 rounded bg-gray-700">
+    <div className="m-2 p-2 rounded bg-gray-300">
       <p>{props.comment.author}</p>
       <p>{props.comment.content}</p>
       {loading
@@ -122,7 +122,7 @@ function Comment(props: { comment: Comment }) {
         : (children?.length || null) && (
             <button
               onClick={handleToggleShowReplies}
-              className="p-2 bg-gray-900 rounded"
+              className="p-2 bg-gray-700 text-white rounded"
             >
               {showReplies ? "Hide Replies" : "Show Replies"}
             </button>
